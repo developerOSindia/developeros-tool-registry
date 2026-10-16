@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DeveloperOSToolRegistrySchema",
+  "description": "Schema definition for DeveloperOS centralized tool registry entries",
+  "type": "object",
+  "required": ["version", "last_updated", "ecosystem", "tools"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "ecosystem": {
+      "type": "object",
+      "required": ["name", "website", "tools_directory", "github_org"],
+      "properties": {
+        "name": { "type": "string" },
+        "website": { "type": "string", "format": "uri" },
+        "tools_directory": { "type": "string", "format": "uri" },
+        "github_org": { "type": "string", "format": "uri" }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "category",
+          "short_description",
+          "long_description",
+          "parent_suite",
+          "live_url",
+          "repository_url",
+          "seo_slug",
+          "framework",
+          "hosting_provider",
+          "availability_status",
+          "privacy_classification",
+          "version",
+          "last_verified_date"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^tool-[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 2
+          },
+          "category": {
+            "type": "string"
+          },
+          "short_description": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "long_description": {
+            "type": "string"
+          },
+          "parent_suite": {
+            "type": "object",
+            "required": ["id", "name"],
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" }
+            }
+          },
+          "live_url": {
+            "type": ["string", "null"]
+          },
+          "repository_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "seo_slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "framework": {
+            "type": "string"
+          },
+          "hosting_provider": {
+            "type": "string"
+          },
+          "availability_status": {
+            "type": "string",
+            "enum": ["verified_live", "staged_local", "in_development", "deprecated"]
+          },
+          "privacy_classification": {
+            "type": "string",
+            "enum": ["client_side_ephemeral", "zero_storage_client", "ephemeral_server_memory"]
+          },
+          "version": {
+            "type": "string"
+          },
+          "last_verified_date": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    }
+  }
+}

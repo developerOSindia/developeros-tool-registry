@@ -1,0 +1,1 @@
+# Zero external dependencies (uses standard library json, pathlib, unittest)

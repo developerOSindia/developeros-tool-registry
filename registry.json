@@ -1,0 +1,533 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "last_updated": "2026-10-16",
+  "ecosystem": {
+    "name": "DeveloperOS",
+    "website": "https://developeros.in",
+    "tools_directory": "https://tools.developeros.in",
+    "github_org": "https://github.com/developerOSindia"
+  },
+  "tools": [
+    {
+      "id": "tool-json-formatter",
+      "name": "JSON Formatter & Prettifier",
+      "category": "Formatters & Converters",
+      "short_description": "Format, prettify, sort keys, and minify JSON payloads client-side.",
+      "long_description": "High-performance JSON formatter supporting custom indentation (2 or 4 spaces), key alphabetical sorting, and payload minification. Operates strictly in-memory client-side with safe length limits.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "json-formatter",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-json-validator",
+      "name": "JSON Validator & Linter",
+      "category": "Formatters & Converters",
+      "short_description": "Validate RFC 8259 JSON syntax with precise line and column error reporting.",
+      "long_description": "Strict RFC 8259 syntax checker that locates missing commas, unescaped characters, and malformed object pairs with exact line/column indicators and error highlighting.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "json-validator",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-json-csv-converter",
+      "name": "JSON ↔ CSV Converter",
+      "category": "Formatters & Converters",
+      "short_description": "Bidirectional conversion between tabular JSON array objects and CSV data.",
+      "long_description": "Convert complex tabular JSON records into CSV format with auto-detected headers, or parse CSV records into structured JSON arrays. Supports custom delimiters and quote escaping.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "json-csv-converter",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-yaml-json-converter",
+      "name": "YAML ↔ JSON Converter",
+      "category": "Formatters & Converters",
+      "short_description": "Translate configuration files between YAML and JSON syntax with validation.",
+      "long_description": "Bidirectional YAML and JSON converter designed for Kubernetes manifests, Docker Compose files, and cloud configuration payloads. Safe PyYAML parsing without arbitrary code execution.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "yaml-json-converter",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-xml-formatter",
+      "name": "XML Formatter & Beautifier",
+      "category": "Formatters & Converters",
+      "short_description": "Format, indent, and minify XML documents with XXE security defense.",
+      "long_description": "Beautify or minify raw XML payloads with configurable indentation. Features built-in XXE (XML External Entity) and entity expansion defense to protect against entity injection attacks.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "xml-formatter",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-base64-codec",
+      "name": "Base64 Encoder / Decoder",
+      "category": "Security & Encoders",
+      "short_description": "Encode and decode standard or URL-safe Base64 strings with automatic padding.",
+      "long_description": "Encodes UTF-8 strings into RFC 4648 standard Base64 or URL-safe Base64, and decodes incoming strings with automatic padding reconstruction and UTF-8 error tolerance.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "base64-codec",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-jwt-decoder",
+      "name": "JWT Token Claims Decoder",
+      "category": "Security & Encoders",
+      "short_description": "Decode JSON Web Tokens into Header and Payload with human-readable timestamps.",
+      "long_description": "Inspect JWT headers, algorithms, expiry (exp), issued-at (iat), and custom claims client-side. Explicitly notes non-cryptographic verification for security clarity.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "jwt-decoder",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-uuid-generator",
+      "name": "UUID / GUID Batch Generator",
+      "category": "Security & Encoders",
+      "short_description": "Bulk generate cryptographically secure UUID v4 and timestamp-based UUID v1.",
+      "long_description": "Generate up to 100 RFC 4122 compliant UUIDs with options for uppercase formatting, hyphens removal, and curly brace wrapping. Fast and deterministic.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "uuid-generator",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-regex-tester",
+      "name": "Regular Expression Tester",
+      "category": "Security & Encoders",
+      "short_description": "Test regex patterns, inspect named capture groups, and preview substitutions.",
+      "long_description": "Evaluate Python-compatible regular expressions in real-time. Includes capture group inspection, flag toggles (ignore case, multiline, dotall), and ReDoS character limit protections.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "regex-tester",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-cron-builder",
+      "name": "Cron Expression Builder & Explainer",
+      "category": "Security & Encoders",
+      "short_description": "Construct standard 5-part cron schedules and decode expressions into English.",
+      "long_description": "Interactive visual cron builder supporting presets (hourly, daily, weekly) and field breakdowns for minutes, hours, days, months, and weekdays with instant English schedule translation.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "cron-builder",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-unix-timestamp",
+      "name": "Unix Timestamp Converter",
+      "category": "Text & Inspection",
+      "short_description": "Convert epoch seconds and milliseconds to UTC, ISO 8601, and relative times.",
+      "long_description": "Translates epoch seconds or milliseconds to ISO 8601, RFC 2822, UTC, and local timezone formats with human-readable relative time calculations (e.g. '3 hours ago').",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "unix-timestamp",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-url-codec",
+      "name": "URL Encoder, Decoder & Inspector",
+      "category": "Text & Inspection",
+      "short_description": "Percent-encode query parameters and deconstruct URLs into structural parts.",
+      "long_description": "Encode or decode query string parameters with support for form-encoded plus spaces. Deconstructs URLs into scheme, hostname, port, path, query dictionary, and fragment components.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "url-codec",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-text-diff",
+      "name": "Text Diff Checker",
+      "category": "Text & Inspection",
+      "short_description": "Compare code and text side-by-side with additions, deletions, and similarity.",
+      "long_description": "Computes unified and side-by-side diffs using Python standard difflib. Calculates character similarity percentages, additions counts, deletions counts, and configurable context lines.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "text-diff",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-hash-calculator",
+      "name": "Hash & HMAC Calculator",
+      "category": "Text & Inspection",
+      "short_description": "Compute SHA-256, SHA-512, MD5 hashes, HMAC signatures, and constant-time check.",
+      "long_description": "Calculates multi-algorithm cryptographic digests client-side. Includes secret-keyed HMAC generation and constant-time string comparison to prevent timing attack vulnerabilities.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "hash-calculator",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-markdown-previewer",
+      "name": "Markdown Previewer & Outline Inspector",
+      "category": "Text & Inspection",
+      "short_description": "Live Markdown rendering, table-of-contents extraction, and XSS safety check.",
+      "long_description": "Real-time rendering of Markdown syntax with automated heading outline extraction, word count metrics, reading time estimations, and detection of potentially unsafe HTML script tags.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "markdown-previewer",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-html-minifier",
+      "name": "HTML Minifier & Optimizer",
+      "category": "Web & Design Tools",
+      "short_description": "Minify HTML markup, strip comments, and collapse inter-tag whitespace.",
+      "long_description": "Compresses HTML documents, strips non-conditional comments, and eliminates unnecessary whitespace while strictly preserving literal code, pre, script, and textarea tag contents.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "html-minifier",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-css-minifier",
+      "name": "CSS Minifier & Optimizer",
+      "category": "Web & Design Tools",
+      "short_description": "Compress CSS stylesheets, remove comments, and eliminate whitespace.",
+      "long_description": "Minifies CSS stylesheets, strips block comments, normalizes declaration delimiters, removes redundant trailing semicolons, and calculates byte savings and compression percentages.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "css-minifier",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-color-converter",
+      "name": "Color Converter & WCAG Contrast Inspector",
+      "category": "Web & Design Tools",
+      "short_description": "Convert HEX, RGB, HSL, CMYK, and verify WCAG AA accessibility compliance.",
+      "long_description": "Converts color codes bidirectionally between HEX, RGB, HSL, and CMYK formats. Computes exact relative luminance and tests WCAG 2.1 AA/AAA contrast ratios against white and black canvases.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "color-converter",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-text-case-converter",
+      "name": "Text Case Converter",
+      "category": "Web & Design Tools",
+      "short_description": "Convert strings across camelCase, PascalCase, snake_case, and kebab-case.",
+      "long_description": "Intelligent tokenizer that parses camelCase, snake_case, spaces, and punctuation, transforming identifiers into 12 standard programming cases including CONSTANT_CASE and dot.case.",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "text-case-converter",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-qr-code-generator",
+      "name": "QR Code Generator",
+      "category": "Web & Design Tools",
+      "short_description": "Generate vector SVG and PNG QR codes with configurable error correction.",
+      "long_description": "Generates QR codes for URLs, plain text, and Wi-Fi networks. Exports high-resolution PNG images or scalable vector SVG assets with selectable error correction levels (L, M, Q, H).",
+      "parent_suite": {
+        "id": "developeros-devutils",
+        "name": "DeveloperOS DevUtils Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-devutils",
+      "seo_slug": "qr-code-generator",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-api-sentinel",
+      "name": "API Sentinel Route Simulator",
+      "category": "API & Network",
+      "short_description": "Standalone in-memory API route simulator, header inspector, and response mocker.",
+      "long_description": "Simulate REST API endpoints with custom JSON payloads, headers, latency delays, and error codes without provisioning a live backend. Completely in-memory and ephemeral.",
+      "parent_suite": {
+        "id": "api-sentinel",
+        "name": "API Sentinel Flagship"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/api-sentinel",
+      "seo_slug": "api-sentinel",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-data-forge",
+      "name": "Data Forge Tabular Generator",
+      "category": "Database & Data",
+      "short_description": "Generate synthetic tabular datasets and mock relational databases.",
+      "long_description": "Deterministic and randomized generation of synthetic datasets for testing database queries, data pipelines, and UI tables. Exports directly to CSV, JSON, and SQL INSERT scripts.",
+      "parent_suite": {
+        "id": "data-forge",
+        "name": "Data Forge Flagship"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/data-forge",
+      "seo_slug": "data-forge",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-diagram-studio",
+      "name": "Diagram Studio Architecture Canvas",
+      "category": "Documentation & Visuals",
+      "short_description": "Interactive Mermaid.js architecture diagrams and system visualizer.",
+      "long_description": "Renders system architecture diagrams, sequence flows, and entity relationship diagrams directly from Mermaid syntax with zero backend compilation. Runs statically in the browser.",
+      "parent_suite": {
+        "id": "diagram-studio",
+        "name": "Diagram Studio Flagship"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/diagram-studio",
+      "seo_slug": "diagram-studio",
+      "framework": "Vanilla JS & Mermaid.js",
+      "hosting_provider": "Cloudflare Pages",
+      "availability_status": "staged_local",
+      "privacy_classification": "zero_storage_client",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-quick-hub",
+      "name": "DeveloperOS Quick Hub Chrome Extension",
+      "category": "Browser Extensions",
+      "short_description": "Offline JWT, Base64, and UUID browser extension with zero permissions.",
+      "long_description": "Instant offline browser extension for developers. Decodes JWTs, computes Base64 strings, and generates UUIDs without internet access or permissions. Complies with Chrome Manifest V3.",
+      "parent_suite": {
+        "id": "developer-quick-hub",
+        "name": "Developer Quick Hub Extension"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developer-quick-hub",
+      "seo_slug": "developer-quick-hub",
+      "framework": "Chrome Manifest V3",
+      "hosting_provider": "Chrome Web Store",
+      "availability_status": "staged_local",
+      "privacy_classification": "zero_storage_client",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-meta-tags",
+      "name": "OpenGraph & Meta Tag Generator",
+      "category": "Web & Design Tools",
+      "short_description": "Generate social sharing cards and SEO meta tags with real-time preview.",
+      "long_description": "Interactive generator for OpenGraph, Twitter Cards, and standard SEO meta tags. Provides real-time rendering of social sharing previews on desktop and mobile platforms.",
+      "parent_suite": {
+        "id": "suite-web-craft",
+        "name": "Web & Frontend Craft Suite"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/devos-suite-web-craft",
+      "seo_slug": "meta-tag-generator",
+      "framework": "Streamlit",
+      "hosting_provider": "Streamlit Community Cloud",
+      "availability_status": "staged_local",
+      "privacy_classification": "client_side_ephemeral",
+      "version": "1.0.0",
+      "last_verified_date": null
+    },
+    {
+      "id": "tool-quicktools-extension",
+      "name": "DeveloperOS QuickTools Chrome Extension",
+      "category": "Browser Extensions",
+      "short_description": "Privacy-first Manifest V3 developer extension with 10 utilities and tool launcher.",
+      "long_description": "Lightweight, privacy-conscious Chrome Manifest V3 developer extension featuring 10 offline utilities: JSON Formatter, JWT Decoder, Base64 Tool, UUID Generator, SHA Hash Generator, Unix Timestamp Converter, Color Picker, QR Code Generator, Text Toolkit, and Searchable Tool Launcher.",
+      "parent_suite": {
+        "id": "developeros-chrome-extension",
+        "name": "DeveloperOS QuickTools Extension"
+      },
+      "live_url": null,
+      "repository_url": "https://github.com/developerOSindia/developeros-chrome-extension",
+      "seo_slug": "developeros-quicktools",
+      "framework": "Chrome Manifest V3 / TypeScript",
+      "hosting_provider": "Chrome Web Store / GitHub Releases",
+      "availability_status": "staged_local",
+      "privacy_classification": "zero_storage_client",
+      "version": "1.0.0",
+      "last_verified_date": null
+    }
+  ]
+}
