@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Ecosystem: DeveloperOS](https://img.shields.io/badge/Ecosystem-DeveloperOS-6366f1.svg)](https://developeros.in)
-[![Tools Directory](https://img.shields.io/badge/Tools%20Directory-Online-10b981.svg)](https://tools.developeros.in)
+[![Tools Directory](https://img.shields.io/badge/Tools%20Directory-Online-10b981.svg)](https://toolkit.developeros.in)
 [![Privacy: Client--Side](https://img.shields.io/badge/Privacy-Zero--Storage-10b981.svg)](https://developeros.in/privacy)
 [![CI](https://github.com/developerOSindia/developeros-tool-registry/actions/workflows/ci.yml/badge.svg)](https://github.com/developerOSindia/developeros-tool-registry/actions)
 
@@ -71,5 +71,5 @@ python3 -m unittest discover -s tests -p "test_*.py"
 
 Licensed under [MIT](LICENSE).
 - **Main Website**: [https://developeros.in](https://developeros.in)
-- **Central Tools Directory**: [https://tools.developeros.in](https://tools.developeros.in)
+- **Central Tools Directory**: [https://toolkit.developeros.in](https://toolkit.developeros.in)
 - **GitHub Organization**: [https://github.com/developerOSindia](https://github.com/developerOSindia)

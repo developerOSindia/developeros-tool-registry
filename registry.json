@@ -5,7 +5,7 @@
   "ecosystem": {
     "name": "DeveloperOS",
     "website": "https://developeros.in",
-    "tools_directory": "https://tools.developeros.in",
+    "tools_directory": "https://toolkit.developeros.in",
     "github_org": "https://github.com/developerOSindia"
   },
   "tools": [
